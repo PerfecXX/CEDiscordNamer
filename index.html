@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CE Family Naming System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CE Family Naming System</h1>
+        <div class="input-group">
+            <label for="entryYear">ปีที่เข้าศึกษา (พ.ศ.):</label>
+            <input type="number" id="entryYear" required>
+        </div>
+        <div class="input-group">
+            <label for="nickname">ชื่อเล่น:</label>
+            <input type="text" id="nickname" required>
+            <small class="input-tip">กรุณาใส่ชื่อเล่นที่เป็นภาษาไทยเท่านั้น</small>
+        </div>
+        <div class="input-group">
+            <label for="position">ตำแหน่ง:</label>
+            <select id="position">
+                </select>
+        </div>
+        <button id="generateBtn">สร้างชื่อ</button>
+        <div id="errorMessage"></div>
+        <div id="output"></div>
+        <button id="copyBtn">คัดลอก</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
